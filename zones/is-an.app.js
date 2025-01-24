@@ -1,6 +1,6 @@
 // read more about the dnscontrol tool here: <https://docs.dnscontrol.org/>
 
-D('is-an.app', NewRegistrar('none'), DnsProvider(NewDnsProvider('cloudflare')), DefaultTTL(1),
+D('azatxyz.com', NewRegistrar('none'), DnsProvider(NewDnsProvider('cloudflare')), DefaultTTL(1),
   // service records
   TXT('_dmarc', 'v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s;'),
   TXT('*._domainkey', 'v=DKIM1; p='),
