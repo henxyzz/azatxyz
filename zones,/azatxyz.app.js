@@ -1,6 +1,6 @@
 // read more about the dnscontrol tool here: <https://docs.dnscontrol.org/>
 
-D('1bt.uk', NewRegistrar('none'), DnsProvider(NewDnsProvider('cloudflare')), DefaultTTL(1),
+D('azatxyz.app', NewRegistrar('none'), DnsProvider(NewDnsProvider('cloudflare')), DefaultTTL(1),
   // service records
   TXT("@", "v=spf1 -all"),
   TXT("_dmarc", "v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s;"),
